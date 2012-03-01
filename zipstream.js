@@ -195,7 +195,7 @@ ZipStream.prototype._pushCentralDirectory = function() {
   var self = this;
   var cdoffset = self.fileptr;
 
-  var buf = new Buffer(1024);
+  var buf = new Buffer(1024000);
   var ptr = 0;
   var cdsize = 0;
 
